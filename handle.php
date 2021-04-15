@@ -12,7 +12,6 @@
 
     $selectedTest = filter_input(INPUT_GET, "test", FILTER_SANITIZE_STRING);
 
-    $_SESSION["ans-id"] = 1;
     $_SESSION["selected-test"] = $selectedTest;
 
     $questions = new LoadQuestions('tests/' . $selectedTest . '.json');

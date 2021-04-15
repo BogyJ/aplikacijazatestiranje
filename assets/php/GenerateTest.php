@@ -35,7 +35,6 @@
                         <input type=\"{$inputType}\" name=\"{$nameType}\" value=\"{$counterString}\"> {$answer}
                     </div>
                 ";
-                $_SESSION["ans-id"]++;
                 $counter++;
             }
             return $answersElements;
