@@ -361,7 +361,7 @@ main.about > .section-about > div > p {
 }
 
 main.about > .section-about img {
-    width: 30%;
+    width: 350px;
 }
 
 main.contact > form {
@@ -427,6 +427,16 @@ main.contact > form input[type="submit"] {
 main.contact > form textarea {
     padding: 20px 10px;
     font-size: 18px;
+}
+
+@media (max-width: 1870px) {
+	main > section.overview > .cards > .card h4 {
+		font-size: 30px;
+	}
+
+	main > section.overview > .cards > .card p {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 720px) {
