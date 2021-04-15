@@ -4,6 +4,10 @@
 
     include 'assets/templates/top.php';
 
+    if (!isset($_GET["test"])) {
+        header('Location: /');
+    }
+
     session_start();
 
     $selectedTest = filter_input(INPUT_GET, "test", FILTER_SANITIZE_STRING);
